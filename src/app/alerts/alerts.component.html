@@ -1,0 +1,150 @@
+<div>
+  <header class="page-header">
+    <div class="container-fluid">
+      <h2 class="no-margin-bottom">Dashboard</h2>
+    </div>
+  </header>
+  <p>
+    <section class="dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Statistics -->
+          <div class="statistics col-lg-4 col-12">
+            <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+              (click)="modalTitle('PTM Announceme')" (click)="fluid.show()" mdbRippleRadius>
+              <div class="icon bg-red"><i class="fa fa-microphone"></i></div>
+              <div class="text">
+                <h5>PTM Announcement</h5>
+              </div>
+          </div>
+          <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+            (click)="modalTitle('Holidy Accounement')" (click)="fluid.show()" mdbRippleRadius>
+            <div class="icon bg-green"><i class="fa fa-bullhorn"></i></div>
+            <div class="text">
+              <h5>Holidy Accounement</h5>
+            </div>
+        </div>
+        <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+          (click)="modalTitle('Fee Reminder')" (click)="fluid.show()" mdbRippleRadius>
+          <div class="icon bg-orange"><i class="fa fa-bell"></i></div>
+          <div class="text">
+            <h5>Fee Reminder</h5>
+          </div>
+      </div>
+</div>
+
+<div class="statistics col-lg-4 col-12">
+  <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+    (click)="modalTitle('Bus Notification')" (click)="fluid.show()" mdbRippleRadius>
+    <div class="icon bg-red"><i class="fa fa-bus"></i></div>
+    <div class="text">
+      <h5>Bus Notification</h5>
+    </div>
+</div>
+<div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+  (click)="modalTitle('Time Table')" (click)="fluid.show()" mdbRippleRadius>
+  <div class="icon bg-green"><i class="fa fa-calendar"></i></div>
+  <div class="text">
+    <h5>Time Table</h5>
+  </div>
+  </div>
+  <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+    (click)="modalTitle('Function Notification')" (click)="fluid.show()" mdbRippleRadius>
+    <div class="icon bg-orange"><i class="fa fa-paper-plane-o"></i></div>
+    <div class="text">
+      <h5>Function Notification</h5>
+    </div>
+    </div>
+    </div>
+
+    <div class="statistics col-lg-4 col-12">
+      <div class="statistic d-flex align-items-center bg-white has-shadow waves-light" data-toggle="modal" data-target="#basicExample"
+        (click)="modalTitle('Exam/Test Result')" (click)="fluid.show()" mdbRippleRadius>
+        <div class="icon bg-red"><i class="fa fa-tasks"></i></div>
+        <div class="text">
+          <h5>Exam/Test Result</h5>
+        </div>
+    </div>
+    <!--<div class="statistic d-flex align-items-center bg-white has-shadow">-->
+    <!--<div class="icon bg-green"><i class="fa fa-calendar-o"></i></div>-->
+    <!--<div class="text"><strong>152</strong><br><small>Interviews</small></div>-->
+    <!--</div>-->
+    <!--<div class="statistic d-flex align-items-center bg-white has-shadow">-->
+    <!--<div class="icon bg-orange"><i class="fa fa-paper-plane-o"></i></div>-->
+    <!--<div class="text"><strong>147</strong><br><small>Forwards</small></div>-->
+    <!--</div>-->
+    </div>
+    </div>
+    </div>
+    </section>
+
+    </div>
+
+
+    <div mdbModal #fluid="mdb-modal" class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-full-height modal-right" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title w-100" id="myModalLabel">{{title}}</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="fluid.hide()">
+                    <span aria-hidden="true">×</span>
+                </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Class</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">1st</a>
+                      <a class="dropdown-item" href="#">2nd</a>
+                      <a class="dropdown-item" href="#">3rd</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Section</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">A</a>
+                      <a class="dropdown-item" href="#">B</a>
+                      <a class="dropdown-item" href="#">C</a>
+                    </div>
+                </div>
+              </div>
+
+              
+            </div>
+            <div class="row" style="padding-top: 20px">
+                <div class="col-md-12">
+                  <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Student</label>
+                  <input type="text" class="form-control" placeholder="Student" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                  
+                </div>
+              </div>
+            <div class="row" style="padding-top: 20px">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Write Something about {{title}}</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary waves-light" data-dismiss="modal" (click)="fluid.hide()" mdbRippleRadius>Close</button>
+            <button type="button" class="btn btn-primary waves-light" mdbRippleRadius>Save changes</button>
+          </div>
+        </div>
+      </div>
+      </div>
